@@ -107,7 +107,7 @@ export class LibraryService {
   public async trackMovie(movieAttributes: DeepPartial<Movie>) {
     this.logger.info('track movie', { tmdbId: movieAttributes.tmdbId });
     const movie = await this.movieDAO.save(movieAttributes);
-    await this.jobsService.startDownloadMovie(movie.id);
+    //await this.jobsService.startDownloadMovie(movie.id);
     return movie;
   }
 
