@@ -134,7 +134,7 @@ export class RenameAndLinkProcessor {
         oneLine`
             cd "${newFolder}" &&
             ${this.getOrganizeStrategyCommand(organizeStrategy)}
-              "../../downloads/complete/${torrentFile.original}"
+              "../../../bobarr/library/downloads/complete/${torrentFile.original}"
               "${torrentFile.next}"
           `
       );
@@ -209,7 +209,7 @@ export class RenameAndLinkProcessor {
         oneLine`
           cd "${seasonFolder}" &&
           ${this.getOrganizeStrategyCommand(organizeStrategy)}
-            "../../../downloads/complete/${torrentFile.original}"
+            "../../../../bobarr/library/downloads/complete/${torrentFile.original}"
             "${torrentFile.next}"
         `
       );
@@ -308,7 +308,7 @@ export class RenameAndLinkProcessor {
         oneLine`
           cd "${seasonFolder}" &&
           ${this.getOrganizeStrategyCommand(organizeStrategy)}
-          "../../../downloads/complete/${file.original}"
+          "../../../../bobarr/library/downloads/complete/${file.original}"
           "${newName}${file.ext}"
         `
       );
